@@ -29,6 +29,7 @@ SECRET_KEY = 'tGrgDb2IoPFCyDGmYqoGPS02BOGfTBUE'
 client = AipSpeech (APP_ID, API_KEY, SECRET_KEY)
 
 animals = ['鸭', '鱼', '乌龟', '鹅', '青蛙', '虾', '鳄鱼']
+
 for each in animals:
     print("请问你是我妈妈吗？")
     result  = client.synthesis("请问你是我妈妈吗？", 'zh', 1, {'vol': 5,})
