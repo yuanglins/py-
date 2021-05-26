@@ -1,4 +1,3 @@
-# py-
 print("Hello Python interpreter!")
 print("Hello world!")
 print("Hello Python interpreter!")
