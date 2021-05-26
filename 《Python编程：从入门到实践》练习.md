@@ -62,3 +62,57 @@ print(popped_motorcycle)
 motorcycles = ['honda', 'yamaha', 'suzuki']
 last_owner=motorcycles.pop()
 print('The last motorcycle I owned was a'+last_owner.title()+'.')
+
+#弹出列表中任何位置处的元素
+motorcycles = ['honda', 'yamaha', 'suzuki']
+first_owned=motorcycles.pop(1)
+print('The first motorcycle I owned was a '+first_owned.title()+'.')
+
+#根据据值值删删除除元元素素
+motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+print(motorcycles)
+motorcycles.remove('honda')
+print(motorcycles)
+
+#3.3　　组组织织列列表表
+#3.3.1　　使使用用方方法法sort() 对对列列表表进进行行永永久久性性排排序序
+cars=['bmw','audi','toyota','subaru']
+cars.sort()
+print(cars)
+
+cars=['bmw','audi','toyota','subaru']
+cars.sort(reverse=True)
+print(cars)
+
+#3.3.2　　使使用用函函数数sorted() 对对列列表表进进行行临临时时排排序序
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print('Here is the original list:')
+print(cars)
+print("\nHere is the sorted list:")
+print(sorted(cars))
+print("\nHere is the original list again:")
+print(cars)
+
+#3.3.3　　倒倒着着打打印印列列表表
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print(cars)
+cars.reverse()
+print(cars)
+
+#确定定列列表表的的长长度度
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+len(cars)
+print(len(cars))
+
+#3.4　　使使用用列列表表时时避避免免索索引引错错误误
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles[0])
+
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles[-1])
+
+#motorcycles = [ print(motorcycles[-1])
+
+
+#第第 4 章章　　操操作作列列表表
+
