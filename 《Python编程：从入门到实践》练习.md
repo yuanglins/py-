@@ -116,3 +116,70 @@ print(motorcycles[-1])
 
 #第第 4 章章　　操操作作列列表表
 
+magicians = ['alice', 'david', 'carolina']
+for magician in magicians:
+    print(magician)
+
+#4.1.1　　深深入入地地研研究究循循环环
+#4.1.2　　在在for 循循环环中中执执行行更更多多的的操操作作
+
+magicians = ['alice', 'david', 'carolina']
+for magician in magicians:
+    print(magician.title()+ ' that was agreat trick!')
+    print("I can't wait to see your next trick, " + magician.title() + ".\n")
+
+#4.1.3　　在在for 循循环环结结束束后后执执行行一一些些操操作作
+magicians = ['alice', 'david', 'carolina']
+for magician in magicians:
+    print(magician.title() + ", that was a great trick!")
+    print("I can't wait to see your next trick, " + magician.title() + ".\n")
+print("Thank you, everyone. That was a great magic show!")
+
+#4.2.2　　忘忘记记缩缩进进额额外外的的代代码码行行
+magicians = ['alice', 'david', 'carolina']
+for magician in magicians:
+    print(magician.title() + ", that was a great trick!")
+    print("I can't wait to see your next trick, " + magician.title() + ".\n")
+
+#4.2.3　　不不必必要要的的缩缩进进
+message = "Hello Python world!"
+#print(message)
+
+#4.3　　创创建建数数值值列列表表
+for value in range(1,5):
+    print(value)
+
+#4.3.2　　使使用用range() 创创建建数数字字列列表表
+numbers=list(range(1,5))
+print(numbers)
+
+even_numbers=list(range(2,15,3))
+print(even_numbers)
+
+squares = []
+for value in range(1,11):
+    square = value ** 3
+    squares.append(square)
+    print(squares)
+
+#4.3.3　　对对数数字字列列表表执执行行简简单单的的统统计计
+digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+min(digits)
+max(digits)
+sum(digits)
+print(min(digits),max(digits),sum(digits))
+
+#4.3.4　　列列表表解解析析
+squares = [value**2 for value in range(1,11)]
+print(squares)
+
+
+#4.4　　使使用用列列表表的的一一部部分分
+#4.4.1　　切切片片
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
+print(players[0:4])
+#4.4.2　　遍遍历历切切片片
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
+print("Here are the first three players on my team:")
+for player in players[:2]:
+    print(player.title())
