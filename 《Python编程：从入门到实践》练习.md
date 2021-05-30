@@ -183,3 +183,79 @@ players = ['charles', 'martina', 'michael', 'florence', 'eli']
 print("Here are the first three players on my team:")
 for player in players[:2]:
     print(player.title())
+  
+#4.4.3　　复复制制列列表表
+
+
+
+#4.5.1　　定定义义元元组组
+dimensions = (200, 50)
+print(dimensions[0])
+print(dimensions[1])
+
+#4.5.3　　修修改改元元组组变变量量
+dimensions = (200, 50)
+print("Original dimensions:")
+for dimension in dimensions:
+    print(dimension)
+dimensions = (400, 100)
+print("\nModified dimensions:")
+for dimension in dimensions:
+    print(dimension)
+
+requested_toppings = ['mushrooms', 'extra cheese']
+if 'mushrooms' in requested_toppings:
+    print("Adding mushrooms.")
+elif 'pepperoni' in requested_toppings:
+    print("Adding pepperoni.")
+elif 'extra cheese' in requested_toppings:
+    print("Adding extra cheese.")
+print("\nFinished making your pizza!")
+
+#5.4　　使使用用if 语语句句处处理理列列表表
+#5.4.1　　检检查查特特殊殊元元素素
+requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
+for requested_topping in requested_toppings:
+    print("Adding " + requested_topping + ".")
+    print("\nFinished making your pizza!")
+#5.4.2　　确确定定列列表表不不是是空空的的
+requested_toppings = []
+if requested_toppings:
+    for requested_topping in requested_toppings:
+        print()
+else:
+    print('you are fool')
+
+#5.4.3　　使使用用多多个个列列表表
+available_toppings = ['mushrooms', 'olives', 'green peppers','pepperoni', 'pineapple', 'extra cheese']
+requested_toppings = ['mushrooms', 'french fries', 'extra cheese']
+
+#第第 6 章章　　字字典典
+#6.1　　一一个个简简单单的的字字典典
+lien_0 = {'color': 'green', 'points': 5}
+print(lien_0['color'])
+print(lien_0['points'])
+
+#6.2　　使使用用字字典典
+lien_0={'color':'green','point':5}
+print(lien_0)
+
+#6.2.1　　访访问问字字典典中中的的值值
+lien_0={'color':'green'}
+print(lien_0['color'])
+
+#6.2.2　　添添加加键键—值值对对
+lien_0={'color':'green','point':5}
+print(lien_0)
+lien_0['x_position']=0
+lien_0['y_position']=25
+print(lien_0)
+
+
+#6.2.3　　先先创创建建一一个个空空字字典典
+#lien_0=[]
+#lien_0['color']= str(green)
+#lien_0['points']= 666
+
+#print(lien_0)
+
