@@ -258,4 +258,54 @@ print(lien_0)
 #lien_0['points']= 666
 
 #print(lien_0)
+alien_0 = {}
+alien_0['color'] = 'green'
+alien_0['points'] = 5
+print(alien_0)
+
+# 6.2.4　　修修改改字字典典中中的的值值
+alien_0 = {'color': 'green'}
+print("The alien is " + alien_0['color'] + ".")
+
+alien_0['color'] = 'yellow'
+print("The alien is now " + alien_0['color'] + ".")
+
+
+# alien_0 = {'x_position': 0, 'y_position': 25, 'speed': 'medium'} print("Original x-position: " + str(alien_0['x_position']))
+# if alien_0['speed'] == 'slow':
+#     x_increment = 1
+# elif alien_0['speed'] == 'medium':
+#     x_increment = 2
+# else:
+#     x_increment = 3
+#     alien_0['x_position'] = alien_0['x_position'] + x_increment
+#     print("New x-position: " + str(alien_0['x_position']))
+
+favorite_languages = {
+'jen': 'python', 'sarah': 'c',
+'edward': 'ruby', 'phil': 'python', }
+print(favorite_languages)
+
+
+user_0 = {
+'username': 'efermi', 'first': 'enrico', 'last': 'fermi',
+}
+for i in user_0.items():
+    for key, value in user_0.items():
+        print("Value: " + 'value')
+
+
+favorite_languages = {
+'jen': 'python', 'sarah': 'c',
+'edward': 'ruby', 'phil': 'python', }
+for name in sorted(favorite_languages.keys()):
+    print(name.title() + ", thank you for taking the poll.")
+# 6.4　　嵌嵌套套
+alien_0 = {'color': 'green', 'points': 5}
+alien_1 = {'color': 'yellow', 'points': 10}
+alien_2 = {'color': 'red', 'points': 15}
+aliens=[alien_0,alien_1,alien_2]
+for alien in aliens:
+    print(alien)
+
 
